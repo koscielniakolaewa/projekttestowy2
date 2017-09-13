@@ -1,0 +1,251 @@
+import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext');
+
+* {
+    box-sizing: border-box;
+    }
+    
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background: #9999CC;
+    }
+    
+.clearfix:before, .clearfix:after {
+    content:"";
+    display: table ;
+    clear: both;
+     }
+ 
+.container {
+    width: 100%;
+    Max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+    }   
+    
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0;
+    list-style-type: none;
+    line-height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    }
+    
+header {
+    background-color: #99CCFF;
+    height: 60px;
+    line-height: 40px;
+    }
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 3px solid #ffffff;
+    }
+    
+header nav ul li a:hover {
+    color: #003366;
+    }
+    
+header nav img {
+    padding: 15px 0;
+    font-size: 0;
+    float: left;
+    line-height: 60px;
+    }
+    
+.hero {
+    background: url(http://www.mega-tapety.info/resize/kosmos-gwiazdy-800-600-5105.jpg);
+    height: 100vh;
+    padding: 10px 0;
+    background-position: center;
+    background-size: 100%;
+    }
+    
+.tekst {
+    color: white;
+    text-align: center;
+    padding: 35px 40px;
+    }
+    
+.tekst h1 {
+    font-size: 30px;
+    margin: 0;
+    }
+    
+.tekst p {
+    font-size: 24px;
+    }
+    
+.obrazki .container {
+    margin: 20px auto;
+    }
+    
+.zdjecie {
+    height: 250px;
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    }
+    
+.zdjecie:last-of-type {
+    margin-right: 0;
+    }
+    
+.zdjecie img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    }
+    
+.map .container {
+    margin: 30px auto;
+    }
+    
+.map img {
+    width: 100%;
+    }
+    
+footer {
+    background: #99CCFF;
+    color: #fff;
+    }
+    
+footer p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    }
+    
+@media (max-width:1200px){
+
+.container {
+        width: 95%;
+    }
+    
+header nav ul li{
+        width: 100px;
+        padding: 0px;
+    }
+    
+header nav ul li a{
+        width: 100px;
+    }
+    
+.zdjecie {
+    width: 32%;
+    margin-right: 2%;
+    }
+    
+.zdjecie:last-of-type {
+        margin-right: 0;
+    }
+    
+.hero {
+        height: auto;
+    }
+    
+.tekst {
+    font-size: 10px;
+    padding: 50px 0;
+    }
+    
+    }
+
+@media (max-width:768px) {
+    
+.contact:before {
+    display: none;
+    }
+    
+.home:before {
+    display: none;
+    }
+    
+.gallery:before {
+    display: none;
+    }
+
+header {
+    height: initial;
+    text-align: center;
+    }
+    
+header nav ul {
+    display: block;
+    float: none;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    }
+
+header nav ul li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    float: none;
+    }
+    
+header nav ul li a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    float: none;
+    border: none;
+    }
+    
+header nav img {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+
+.zdjecie {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    }
+
+.zdjecie img {
+    float: left;
+    margin-bottom: 20px;
+    }
+
+.zdjecie:last-of-type {
+    margin: 0 auto;
+    }
+
+.zdjecie:last-of-type img{
+    margin-bottom: 0;
+    }
+    
+footer p {
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    }
+
+    }
+    
